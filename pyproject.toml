@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tinytest"
+version = "0.1.0"
+description = "A small zero-dependency testing library with a CLI runner."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Rukioyuza" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+tinytest = "tinytest.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
